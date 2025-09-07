@@ -11,9 +11,4 @@
   ],
   
 }
-
-{
-  "build": {
-    "outputDirectory": ".next"
-  }
 }
