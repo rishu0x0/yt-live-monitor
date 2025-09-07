@@ -9,9 +9,9 @@
     { "src": "/dashboard", "dest": "/dashboard" },
     { "src": "/", "dest": "/" }
   ],
-  {
+  
   "build": {
     "outputDirectory": ".next"
   }
-}
+
 }
