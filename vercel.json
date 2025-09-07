@@ -10,8 +10,10 @@
     { "src": "/", "dest": "/" }
   ],
   
+}
+
+{
   "build": {
     "outputDirectory": ".next"
   }
-
 }
