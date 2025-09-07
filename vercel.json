@@ -8,9 +8,8 @@
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/dashboard", "dest": "/dashboard" },
     { "src": "/", "dest": "/" }
-  ]
-}
-{
+  ],
+
   "build": {
     "outputDirectory": ".next"
   }
