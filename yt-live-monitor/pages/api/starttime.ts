@@ -21,7 +21,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (!messageId) {
       const sent = await sendMail({ subject, html });
       messageId = sent.messageId;
-      await setThreadInfo(VIDEO_ID, messageId, subject);
+      if (messageId) {
+        await setThreadInfo(VIDEO_ID, messageId, subject);
+      }
     } else {
       await sendMail({ subject, html, inReplyTo: messageId, references: [messageId] });
     }
