@@ -1,0 +1,12 @@
+name: Poll YouTube Check
+on:
+  schedule:
+    - cron: '*/1 * * * *' # every 1 minute
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call youtube-check
+        run: |
+          curl -sS https://your-vercel-app.vercel.app/api/youtube-check || exit 0
+# Replace https://your-vercel-app.vercel.app with your actual deployed URL or Vercel preview URL.
